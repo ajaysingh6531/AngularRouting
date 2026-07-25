@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { RouterLink, RouterOutlet } from '@angular/router';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { Login } from '../login/login';
 @Component({
   selector: 'app-header',
-  imports: [RouterLink,RouterOutlet,Login],
+  imports: [RouterLink,RouterOutlet,RouterLinkActive],
   templateUrl: './header.html',
   styleUrl: './header.css',
 })

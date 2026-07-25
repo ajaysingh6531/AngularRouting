@@ -1,1 +1,21 @@
+<p>header works!</p>
+<nav>
+<h2>Logo</h2>
+<ul>
+    <li>
+        <!-- [routerLinkActiveOptions]="{exact:true}"  if you remove this on the home will remain red for everypage because localhost:4200/about contains home also localhost:4200/-->
+        <a routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" routerLink="/">Home</a>
+    </li>
+    <li>
+        <a routerLinkActive="active" routerLink="/login">Login</a>
+    </li>
+    <li>
+        <a routerLinkActive="active" routerLink="/about">About</a>
+    </li>
+    <li>
+        <a routerLinkActive="active" routerLink="/contact">ContactUs</a>
+    </li>
+</ul>
 
+    
+</nav>
