@@ -5,7 +5,7 @@ import { About } from './about/about';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,RouterLink,Header,About],
+  imports: [RouterOutlet,RouterLink,Header],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

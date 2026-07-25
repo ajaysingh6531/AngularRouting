@@ -2,13 +2,14 @@ nav{
     display: flex;
     justify-content: space-between;
     margin-left: 10px;
-    margin-right: 10px;
+    margin-right: 5px;
 }
 ul{
-    display: flex;
+     display: flex;
     list-style-type: none;
-    width: 200px;
-    justify-content: space-between;
+    gap: 20px;      /* spacing between items */
+    margin: 0;
+    padding: 0;
 }
 
 ul li a{

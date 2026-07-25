@@ -1,1 +1,20 @@
-<p>home works!</p>
+<app-header></app-header>
+<h1>Basic Routing</h1>
+
+        <!-- profile is router path -->
+        <a [routerLink]="['profile',{name:'ajay singh'}]">Go To Profile</a>
+        <br>
+        <br>
+        <button (click)="goToProfile('peter')"> GO TO Profile</button>
+        <button (click)="goToProfile('deepu')"> GO TO Profile</button>
+
+        <h1>user List</h1>
+
+      <ul>
+          @for(u of users;track u.id){
+            <li><a routerLink="/user/{{u.id}}/{{u.name}}">{{u.name}}</a></li>
+        }
+      </ul>
+
+
+    
