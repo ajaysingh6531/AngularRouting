@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
 import { Header } from '../header/header';
 import { Router, RouterLink } from '@angular/router';
+import { User1 } from '../user-1/user-1';
+import { FormsModule, NgModel } from '@angular/forms';
 @Component({
   selector: 'app-home',
-  imports: [RouterLink,Header],
+  imports: [RouterLink,Header,User1,FormsModule],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })
@@ -36,4 +38,10 @@ export class Home {
     }
 
   ]
+  username="bruce";
+
+  onUserChange(u:string){
+    this.username=u;
+  }
+  selectedUser: string = "anil";
 }

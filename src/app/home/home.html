@@ -16,5 +16,24 @@
         }
       </ul>
 
+      <h1>pass data to child component</h1>
+
+      <!-- <app-user-1 us="Ajay hmo">  for static-->
+        <!-- //here "username" is what we defined in home.ts file and now usr will be using in user-1  -->
+
+        <!-- <app-user-1 [usr]="username"></app-user-1> -->
+
+        <!-- <app-user-1 [usr]="username" ></app-user-1> -->
+
+        <app-user-1 [usr]="selectedUser" city="blr"></app-user-1>
+          (change)="onUserChange(selectedUser.value)" name="" id="" 
+
+          <select [(ngModel)]="selectedUser" >
+            <option value="anil">Anil</option>
+            <option value="ajay">Ajay</option>
+            <option value="deepu">Deepu</option>
+            <option value="saurav">Saurav</option>
+          </select>
+
 
     
