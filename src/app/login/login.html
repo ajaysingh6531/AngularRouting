@@ -1,7 +1,7 @@
 <app-header></app-header>
 <p>login works!</p>
 
-<h1>Basic React Form</h1>
+<h1>Basic React Form with Control:-></h1>
 <form action="" method="post">
 
     <input type="text" placeholder="enter name" [formControl]="name">
@@ -19,4 +19,21 @@
 
     <h2>name is {{name.value}}</h2>
     <h2>password is {{password.value}}</h2>
+</form>
+
+<h1>form Grouping:-></h1>
+
+<form  [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+    <input type="text" name="" id="" placeholder="enter name" formControlName="name1">  
+    <br>
+    <br>
+    <input type="text" name="" id="" placeholder="enter password" formControlName="password1">
+    <br>
+    <br>
+    <input type="text" name="" id="" placeholder="enter email" formControlName="email1">
+    <br>
+    <br>
+    <button>Submit</button>
+    <button type="button" (click)="setval()">Set Value</button>
+    <h6>{{this.profileForm.value.email1}}</h6>
 </form>
