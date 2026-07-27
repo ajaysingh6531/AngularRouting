@@ -1,2 +1,22 @@
 <app-header></app-header>
 <p>login works!</p>
+
+<h1>Basic React Form</h1>
+<form action="" method="post">
+
+    <input type="text" placeholder="enter name" [formControl]="name">
+    <br>
+    <br>
+
+    <input type="text" placeholder="enter password" [formControl]="password">
+    <br>
+    <br>
+     <!-- // if you click on button twice values will be visible once only first click because after first click 
+      name and password will become string not formcontrol -->
+    <button type="button" (click)="displayValues()">login</button>
+
+    <button type="button" (click)="setValues()">Update in Field</button>
+
+    <h2>name is {{name.value}}</h2>
+    <h2>password is {{password.value}}</h2>
+</form>
