@@ -44,4 +44,9 @@ export class Home {
     this.username=u;
   }
   selectedUser: string = "anil";
+
+  student:undefined | String[];
+  handleusers(u:string[]){
+    this.student=u;
+  }
 }

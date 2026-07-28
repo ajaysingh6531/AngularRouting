@@ -36,11 +36,20 @@
           </select>
 
 
-    
-          <h1>pass data to child component for array</h1>
+          <!-- bellow ins working code just uncomment it  -->
+          <!-- <h1>pass data to child component for array</h1>
 
           @for(u of users;track u){
             <div>
               <app-user-1 [us]="users"></app-user-1>
             </div>
+          } -->
+
+          <h1>pass data from child to parent: </h1>
+          <app-user-1 (getUsers)="handleusers($event)"></app-user-1>
+
+          @for(s of student;track s){
+            <h6>{{s}}</h6>
           }
+            <!-- now want list of child  to be visible  on parent via button click so for that disable ngoninit 
+               -->
