@@ -11,4 +11,5 @@ export class User1 {
   // @Input() us:string=""
   @Input() usr:String="";
   @Input() city:String="";
+  @Input() us:{ id: number; name: string;age:number;email:string }[] = [];
 }

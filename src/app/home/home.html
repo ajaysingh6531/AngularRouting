@@ -37,3 +37,10 @@
 
 
     
+          <h1>pass data to child component for array</h1>
+
+          @for(u of users;track u){
+            <div>
+              <app-user-1 [us]="users"></app-user-1>
+            </div>
+          }
