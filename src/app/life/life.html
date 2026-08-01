@@ -1,0 +1,10 @@
+<app-header></app-header>
+<h1>life cycle component!</h1>
+
+<button (click)="updateCounter()">Count:{{counter}}</button>
+<div *ngIf="counter!=5"> 
+    <!-- here we are trying to send counter to life child -->
+    <app-lifechild  [c]="counter" #child></app-lifechild>
+</div>
+
+

@@ -6,6 +6,7 @@ import { Home } from './home/home';
 import {PageNotFound}  from './page-not-found/page-not-found';
 import { Profile } from './profile/profile';
 import { User } from './user/user';
+import { Life } from './life/life';
 
 export const routes: Routes = [
     {
@@ -25,7 +26,11 @@ export const routes: Routes = [
     },
      
     {
+        
         path:'user/:idno/:uno',component:User
+    },
+    {
+        path:'lifecycle',component:Life
     },
     {
         path:'**',component:PageNotFound
