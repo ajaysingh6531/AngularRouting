@@ -1,9 +1,17 @@
 import { Component } from '@angular/core';
 import { Header } from '../header/header';
+import { CurrencyPipe, DatePipe, LowerCasePipe, TitleCasePipe, UpperCasePipe } from '@angular/common';
+import {CurrencyConvertorPipe} from '../pipe/currency-convertor-pipe'
 @Component({
   selector: 'app-about',
-  imports: [Header],
+  imports: [Header,UpperCasePipe,TitleCasePipe,LowerCasePipe,DatePipe,CurrencyPipe,CurrencyConvertorPipe],
   templateUrl: './about.html',
   styleUrl: './about.css',
 })
-export class About {}
+export class About {
+
+  title="code step by step";
+  name="AJAY";
+  date=new Date();
+  amount=10;
+}

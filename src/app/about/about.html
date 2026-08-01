@@ -1,4 +1,23 @@
 <app-header></app-header>
-<p>about works!</p>
+<h1>Pipes in Angular!</h1>
+<h5>{{title}}</h5>
+
+<h5>{{title | uppercase}}</h5>
+<h5>{{title | titlecase}}</h5>
+
+<h5>{{name | lowercase}}</h5>
+<h5>{{date | date}}</h5>
+<h5>{{date | date:'fullDate'}}</h5>
+<h5>{{date | date:'hh:mm:ss'}}</h5>
+
+<h5>{{amount | currency}}</h5>
+<h5>{{amount | currency:'EUR'}}</h5>
+<h5>{{amount | currency:'INR'}}</h5>
+<h5>{{date | date:'fullDate' |uppercase}}</h5>
+
+<!-- currencyConvertor is the name in @Pipe -->
+<h5>{{amount | currencyConvertor}}</h5>
+
+<h5>{{amount | currencyConvertor:12}}</h5>
 
 
