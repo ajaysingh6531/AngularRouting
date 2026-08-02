@@ -20,4 +20,12 @@
 
 <h5>{{amount | currencyConvertor:12}}</h5>
 
+<!-- if you dont want your data to be shown on button click then you can put this data this.pdata= this.product.getProductData(); 
+ in ngoninit function  just conment out the button you can see-->
+
+<button (click)="getPata()">load product data</button>
+
+@for(item of pdata;track item){
+    <h3>{{item.name}}, {{item.brand}},{{item.price}}</h3>
+}
 
